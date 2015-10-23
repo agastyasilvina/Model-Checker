@@ -12,12 +12,12 @@ September, 2015
 ===============
 The Model Checker project is a project to implement a simple model checker.
 This model checker consists of several components, 
+```
 	1) Model Generator 
-		The model generator generates the model into an object of 2D graph. 
-		The graph (i.e. represented as an adjacent list) is created for generating
-		all possible pathways from an initial state. A model may have several
-		initial states. The model generator takes a JSON file (e.g. /data/json)
-		as an input. 
+	   The model generator generates the model into an object of 2D graph. 
+	   The graph (i.e. represented as an adjacent list) is created for generating
+	   all possible pathways from an initial state. A model may have several
+	   initial states. The model generator takes a JSON file (e.g. /data/json) as an input. 
 	  "model.json"
 	  The model.json is a JSON file that contains a model object. 
 	  The model object consist of states,  transitions. It may also have a constraint to 
@@ -49,23 +49,26 @@ This model checker consists of several components,
 	   "AaFb"
 	   a : [act, act1, act2]
 	   b : [act2, act3, act4]
-	 
 	   
 	3) Path Generator and Verifier
 	   A path generator is used to generate all possible path for the input model. 
 	   Once generated, a formula can be tested against the pathways using a verifier.  
+```
 
 2. Installation
 ================
 Note that this Model Checker will not run without Java installed on the host
 system. Java can be download from http://java.sun.com.
 
-To run the program, all the libraries (e.g. jung, gson, antlr) are needed. 
-There is no need to install antlr as we have generated the parser and lexer 
-(i.e. FormulaLexer.java & FormulaParser.java) for the CTL formula based on the Formula.g. 
+To run the program, all the libraries (e.g. gson, antlr) are needed. 
+The libraries need can be added manually to the project. By default, it's managed 
+by a build automation tool. (i.e. gradle)
+
+There is no need to install antlr as the parser and lexer has been generated.
+The Antlr library is needed during runtime. (i.e. FormulaLexer.java & FormulaParser.java)
+for the CTL formula based on the Formula.g. 
 
 If you are using eclipse or other java IDE, you can import the project to the IDE.
-	
 	  
 3. CTL Formula Parser
 ======================
