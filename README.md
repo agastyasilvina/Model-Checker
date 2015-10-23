@@ -77,6 +77,7 @@ There are two different parsers available to use for this project based on its g
 (i.e. Formula.g). Detail of how the CTL is being parse is as below:
 
 Example:
+```
 	> ApFq ( a && b ); p = ["act", "act2"]; q = ["act3", "act4"]
 		quantifier = "AF"
 		ap = {a,b}
@@ -85,3 +86,4 @@ Example:
 		quantifier = "A"
 		ap = {a}
 		nestedCTL = {AG (c)}
+```
