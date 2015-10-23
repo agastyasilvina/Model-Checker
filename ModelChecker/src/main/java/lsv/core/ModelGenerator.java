@@ -1,4 +1,4 @@
-package lsv.utils;
+package lsv.core;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -13,8 +13,8 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+import lsv.grammar.CTL;
 import lsv.grammar.Formula;
-import lsv.model.CTL;
 import lsv.model.Model;
 import lsv.model.State;
 import lsv.model.Transition;
@@ -35,8 +35,7 @@ public class ModelGenerator {
 	private Transition [] transitions;
 	private State [] states;
 	
-	//added for Formula Alternatives;
-	private Formula constraintAlt;
+	private Formula constraint;
 	
 	private boolean kripke;
 	
@@ -57,11 +56,10 @@ public class ModelGenerator {
 		return this.kripke;
 	}
 
-	
-
-	public Formula getConstraintAlt() {
-		return this.constraintAlt;
+	public Formula getConstraint() {
+		return this.constraint;
 	}
+	
     /** 
      * ModelGenerator constructor.
      * Generate the model graph (Using adjacent list) and the model object
@@ -83,15 +81,14 @@ public class ModelGenerator {
 		
 		createGraph(model, isKripke, this);				
 		checkKripke(isKripke, this);	
-        //for the formula alt... 
-        addConstraintAlt(filePath, this);
+        //for the formula... 
+        addConstraint(filePath, this);
         	
 	}
 
 
 	//For the formula Alternatives...
-	private static void addConstraintAlt(String filePath, ModelGenerator mg) throws FileNotFoundException {
-		System.out.println("Generate Constraint into FormulaAlt object...");
+	private static void addConstraint(String filePath, ModelGenerator mg) throws FileNotFoundException {
 		JsonParser parser = new JsonParser();
         JsonElement jsonElement = parser.parse(new FileReader(filePath));
         JsonObject jsonObject = jsonElement.getAsJsonObject();
@@ -99,8 +96,8 @@ public class ModelGenerator {
         if(jsonObject != null) {
 	        CTL ctl = CTL.createCTL(jsonObject);
 			try {
-				mg.constraintAlt = SimpleParser.parseCTL(ctl.getFormula());
-				Formula.addActions(ctl, mg.constraintAlt);
+				mg.constraint = SimpleParser.parseCTL(ctl.getFormula());
+				Formula.addActions(ctl, mg.constraint);
 	
 			} catch (RecognitionException e) {
 				System.out.println("Unable to generate CTL formula:");

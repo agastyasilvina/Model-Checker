@@ -19,9 +19,6 @@ public class Model {
 		public State[] getStates() {
 			return states;
 		}
-		public void setStates(State[] states) {
-			this.states = states;
-		}
 		
 		/**
 		 * Returns the list of transition
@@ -29,9 +26,6 @@ public class Model {
 		 * */
 		public Transition[] getTransitions() {
 			return transitions;
-		}
-		public void setTransitions(Transition[] transitions) {
-			this.transitions = transitions;
 		}
 		
 

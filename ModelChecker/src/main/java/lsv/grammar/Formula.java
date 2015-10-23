@@ -1,5 +1,5 @@
 package lsv.grammar;
-import lsv.model.CTL;
+
 /**
  * FormulaAlt class.
  * This is an alternatives option for parsing the CTL formula. 

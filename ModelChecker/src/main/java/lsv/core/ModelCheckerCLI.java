@@ -7,10 +7,8 @@ import org.antlr.runtime.RecognitionException;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 
+import lsv.grammar.CTL;
 import lsv.grammar.Formula;
-import lsv.model.CTL;
-import lsv.utils.ModelGenerator;
-import lsv.utils.SimpleParser;
 
 /**
  * The Main class. 

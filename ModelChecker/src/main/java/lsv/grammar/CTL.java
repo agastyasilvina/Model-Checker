@@ -1,4 +1,4 @@
-package lsv.model;
+package lsv.grammar;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -53,7 +53,6 @@ public class CTL {
 	            JsonObject jsonObject = jsonElement.getAsJsonObject();
 	            
 	            formula = jsonObject.get("formula").getAsString();
-	            System.out.println(formula);
 	            for(int i = 97; i < 123; i++) {
 					String [] str = gson.fromJson(jsonObject.get((char) i+""), String[].class);
 					if(str != null) {
@@ -76,7 +75,6 @@ public class CTL {
 		 String formula = "";
 		 Map<Character, String[]> actionMap = new HashMap<>();
 	     formula = jsonObject.get("formula").getAsString();
-	     System.out.println(formula);
 	        for(int i = 97; i < 123; i++) {
 	        	String [] str = gson.fromJson(jsonObject.get((char) i+""), String[].class);
 				if(str != null) {

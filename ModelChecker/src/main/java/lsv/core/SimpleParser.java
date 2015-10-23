@@ -1,4 +1,4 @@
-package lsv.utils;
+package lsv.core;
 import org.antlr.runtime.ANTLRStringStream;
 import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.RecognitionException;
@@ -9,11 +9,11 @@ import lsv.grammar.FormulaParser;
 
 
 /**
- * A CTL Formula parser (Alternatives).
+ * A CTL Formula parser.
  * The SimpleParser parses the CTL formula provided by the user 
  * from a JSON file (e.g. /data/ctl.json) and generates 
  * an instance of Formula. The Parser and the Lexer is generated
- * using Antlr version 3.x. The Grammar used is shown in /grammar/FormulaAlt.g
+ * using Antlr version 3.x. The Grammar used is shown in /grammar/Formula.g
  * 
  * */
 public class SimpleParser {
