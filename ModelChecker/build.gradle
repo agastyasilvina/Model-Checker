@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	//Antlr, GSON, JUNIT Dependencies
+    compile fileTree(dir: 'libs', include: '*.jar')
+    compile 'com.google.code.gson:gson:2.3'
+    testCompile 'junit:junit:4.12'
+}
