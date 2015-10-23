@@ -1,12 +1,7 @@
 package lsv.grammar;
-
-// $ANTLR 3.5.2 /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g 2015-10-22 22:33:30
+// $ANTLR 3.5.2 C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g 2015-10-23 10:06:45
 
 import org.antlr.runtime.*;
-
-import antlr.NoViableAltException;
-import antlr.RecognitionException;
-
 import java.util.Stack;
 import java.util.List;
 import java.util.ArrayList;
@@ -43,15 +38,15 @@ public class FormulaLexer extends Lexer {
 	public FormulaLexer(CharStream input, RecognizerSharedState state) {
 		super(input,state);
 	}
-	@Override public String getGrammarFileName() { return "/Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g"; }
+	@Override public String getGrammarFileName() { return "C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g"; }
 
 	// $ANTLR start "T__14"
 	public final void mT__14() throws RecognitionException {
 		try {
 			int _type = T__14;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:7:7: ( '!' )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:7:9: '!'
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:7:7: ( '!' )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:7:9: '!'
 			{
 			match('!'); 
 			}
@@ -70,8 +65,8 @@ public class FormulaLexer extends Lexer {
 		try {
 			int _type = T__15;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:8:7: ( '&&' )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:8:9: '&&'
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:8:7: ( '&&' )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:8:9: '&&'
 			{
 			match("&&"); 
 
@@ -91,8 +86,8 @@ public class FormulaLexer extends Lexer {
 		try {
 			int _type = T__16;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:9:7: ( '<=>' )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:9:9: '<=>'
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:9:7: ( '<=>' )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:9:9: '<=>'
 			{
 			match("<=>"); 
 
@@ -112,8 +107,8 @@ public class FormulaLexer extends Lexer {
 		try {
 			int _type = T__17;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:10:7: ( '=>' )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:10:9: '=>'
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:10:7: ( '=>' )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:10:9: '=>'
 			{
 			match("=>"); 
 
@@ -133,8 +128,8 @@ public class FormulaLexer extends Lexer {
 		try {
 			int _type = T__18;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:11:7: ( '||' )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:11:9: '||'
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:11:7: ( '||' )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:11:9: '||'
 			{
 			match("||"); 
 
@@ -154,8 +149,8 @@ public class FormulaLexer extends Lexer {
 		try {
 			int _type = TRUE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:72:6: ( 'True' )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:72:8: 'True'
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:70:6: ( 'True' )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:70:8: 'True'
 			{
 			match("True"); 
 
@@ -175,8 +170,8 @@ public class FormulaLexer extends Lexer {
 		try {
 			int _type = FALSE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:73:6: ( 'False' )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:73:8: 'False'
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:71:6: ( 'False' )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:71:8: 'False'
 			{
 			match("False"); 
 
@@ -196,8 +191,8 @@ public class FormulaLexer extends Lexer {
 		try {
 			int _type = ALL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:74:6: ( 'A' )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:74:8: 'A'
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:72:6: ( 'A' )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:72:8: 'A'
 			{
 			match('A'); 
 			}
@@ -216,8 +211,8 @@ public class FormulaLexer extends Lexer {
 		try {
 			int _type = EXISTS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:75:8: ( 'E' )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:75:10: 'E'
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:73:8: ( 'E' )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:73:10: 'E'
 			{
 			match('E'); 
 			}
@@ -236,10 +231,10 @@ public class FormulaLexer extends Lexer {
 		try {
 			int _type = UNTIL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:76:8: ( ( 'a' .. 'z' )? 'U' ( 'a' .. 'z' )? )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:76:10: ( 'a' .. 'z' )? 'U' ( 'a' .. 'z' )?
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:74:8: ( ( 'a' .. 'z' )? 'U' ( 'a' .. 'z' )? )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:74:10: ( 'a' .. 'z' )? 'U' ( 'a' .. 'z' )?
 			{
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:76:10: ( 'a' .. 'z' )?
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:74:10: ( 'a' .. 'z' )?
 			int alt1=2;
 			int LA1_0 = input.LA(1);
 			if ( ((LA1_0 >= 'a' && LA1_0 <= 'z')) ) {
@@ -247,7 +242,7 @@ public class FormulaLexer extends Lexer {
 			}
 			switch (alt1) {
 				case 1 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:
 					{
 					if ( (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 						input.consume();
@@ -263,7 +258,7 @@ public class FormulaLexer extends Lexer {
 			}
 
 			match('U'); 
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:76:24: ( 'a' .. 'z' )?
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:74:24: ( 'a' .. 'z' )?
 			int alt2=2;
 			int LA2_0 = input.LA(1);
 			if ( ((LA2_0 >= 'a' && LA2_0 <= 'z')) ) {
@@ -271,7 +266,7 @@ public class FormulaLexer extends Lexer {
 			}
 			switch (alt2) {
 				case 1 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:
 					{
 					if ( (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 						input.consume();
@@ -302,8 +297,8 @@ public class FormulaLexer extends Lexer {
 		try {
 			int _type = OPEN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:77:8: ( '(' )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:77:10: '('
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:75:8: ( '(' )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:75:10: '('
 			{
 			match('('); 
 			}
@@ -322,8 +317,8 @@ public class FormulaLexer extends Lexer {
 		try {
 			int _type = CLOSE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:78:8: ( ')' )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:78:10: ')'
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:76:8: ( ')' )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:76:10: ')'
 			{
 			match(')'); 
 			}
@@ -342,10 +337,10 @@ public class FormulaLexer extends Lexer {
 		try {
 			int _type = ATOMIC;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:79:8: ( ( '!' )* ( 'a' .. 'z' ) )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:79:9: ( '!' )* ( 'a' .. 'z' )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:77:8: ( ( '!' )* ( 'a' .. 'z' ) )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:77:9: ( '!' )* ( 'a' .. 'z' )
 			{
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:79:9: ( '!' )*
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:77:9: ( '!' )*
 			loop3:
 			while (true) {
 				int alt3=2;
@@ -356,7 +351,7 @@ public class FormulaLexer extends Lexer {
 
 				switch (alt3) {
 				case 1 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:79:10: '!'
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:77:10: '!'
 					{
 					match('!'); 
 					}
@@ -391,7 +386,7 @@ public class FormulaLexer extends Lexer {
 		try {
 			int _type = TEMPORAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:80:9: ( 'A' ( 'a' .. 'z' )? 'F' ( 'a' .. 'z' )? | 'A' ( 'a' .. 'z' )? 'G' ( 'a' .. 'z' )? | 'A' ( 'a' .. 'z' )? 'X' ( 'a' .. 'z' )? | 'E' ( 'a' .. 'z' )? 'F' ( 'a' .. 'z' )? | 'E' ( 'a' .. 'z' )? 'G' ( 'a' .. 'z' )? | 'E' ( 'a' .. 'z' )? 'X' ( 'a' .. 'z' )? )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:78:9: ( 'A' ( 'a' .. 'z' )? 'F' ( 'a' .. 'z' )? | 'A' ( 'a' .. 'z' )? 'G' ( 'a' .. 'z' )? | 'A' ( 'a' .. 'z' )? 'X' ( 'a' .. 'z' )? | 'E' ( 'a' .. 'z' )? 'F' ( 'a' .. 'z' )? | 'E' ( 'a' .. 'z' )? 'G' ( 'a' .. 'z' )? | 'E' ( 'a' .. 'z' )? 'X' ( 'a' .. 'z' )? )
 			int alt16=6;
 			int LA16_0 = input.LA(1);
 			if ( (LA16_0=='A') ) {
@@ -577,10 +572,10 @@ public class FormulaLexer extends Lexer {
 
 			switch (alt16) {
 				case 1 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:81:3: 'A' ( 'a' .. 'z' )? 'F' ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:79:3: 'A' ( 'a' .. 'z' )? 'F' ( 'a' .. 'z' )?
 					{
 					match('A'); 
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:81:6: ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:79:6: ( 'a' .. 'z' )?
 					int alt4=2;
 					int LA4_0 = input.LA(1);
 					if ( ((LA4_0 >= 'a' && LA4_0 <= 'z')) ) {
@@ -588,7 +583,7 @@ public class FormulaLexer extends Lexer {
 					}
 					switch (alt4) {
 						case 1 :
-							// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:
+							// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:
 							{
 							if ( (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 								input.consume();
@@ -604,7 +599,7 @@ public class FormulaLexer extends Lexer {
 					}
 
 					match('F'); 
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:81:20: ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:79:20: ( 'a' .. 'z' )?
 					int alt5=2;
 					int LA5_0 = input.LA(1);
 					if ( ((LA5_0 >= 'a' && LA5_0 <= 'z')) ) {
@@ -612,7 +607,7 @@ public class FormulaLexer extends Lexer {
 					}
 					switch (alt5) {
 						case 1 :
-							// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:
+							// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:
 							{
 							if ( (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 								input.consume();
@@ -630,10 +625,10 @@ public class FormulaLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:82:4: 'A' ( 'a' .. 'z' )? 'G' ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:80:4: 'A' ( 'a' .. 'z' )? 'G' ( 'a' .. 'z' )?
 					{
 					match('A'); 
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:82:7: ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:80:7: ( 'a' .. 'z' )?
 					int alt6=2;
 					int LA6_0 = input.LA(1);
 					if ( ((LA6_0 >= 'a' && LA6_0 <= 'z')) ) {
@@ -641,7 +636,7 @@ public class FormulaLexer extends Lexer {
 					}
 					switch (alt6) {
 						case 1 :
-							// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:
+							// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:
 							{
 							if ( (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 								input.consume();
@@ -657,7 +652,7 @@ public class FormulaLexer extends Lexer {
 					}
 
 					match('G'); 
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:82:21: ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:80:21: ( 'a' .. 'z' )?
 					int alt7=2;
 					int LA7_0 = input.LA(1);
 					if ( ((LA7_0 >= 'a' && LA7_0 <= 'z')) ) {
@@ -665,7 +660,7 @@ public class FormulaLexer extends Lexer {
 					}
 					switch (alt7) {
 						case 1 :
-							// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:
+							// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:
 							{
 							if ( (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 								input.consume();
@@ -683,10 +678,10 @@ public class FormulaLexer extends Lexer {
 					}
 					break;
 				case 3 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:83:4: 'A' ( 'a' .. 'z' )? 'X' ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:81:4: 'A' ( 'a' .. 'z' )? 'X' ( 'a' .. 'z' )?
 					{
 					match('A'); 
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:83:7: ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:81:7: ( 'a' .. 'z' )?
 					int alt8=2;
 					int LA8_0 = input.LA(1);
 					if ( ((LA8_0 >= 'a' && LA8_0 <= 'z')) ) {
@@ -694,7 +689,7 @@ public class FormulaLexer extends Lexer {
 					}
 					switch (alt8) {
 						case 1 :
-							// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:
+							// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:
 							{
 							if ( (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 								input.consume();
@@ -710,7 +705,7 @@ public class FormulaLexer extends Lexer {
 					}
 
 					match('X'); 
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:83:21: ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:81:21: ( 'a' .. 'z' )?
 					int alt9=2;
 					int LA9_0 = input.LA(1);
 					if ( ((LA9_0 >= 'a' && LA9_0 <= 'z')) ) {
@@ -718,7 +713,7 @@ public class FormulaLexer extends Lexer {
 					}
 					switch (alt9) {
 						case 1 :
-							// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:
+							// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:
 							{
 							if ( (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 								input.consume();
@@ -736,10 +731,10 @@ public class FormulaLexer extends Lexer {
 					}
 					break;
 				case 4 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:84:4: 'E' ( 'a' .. 'z' )? 'F' ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:82:4: 'E' ( 'a' .. 'z' )? 'F' ( 'a' .. 'z' )?
 					{
 					match('E'); 
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:84:7: ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:82:7: ( 'a' .. 'z' )?
 					int alt10=2;
 					int LA10_0 = input.LA(1);
 					if ( ((LA10_0 >= 'a' && LA10_0 <= 'z')) ) {
@@ -747,7 +742,7 @@ public class FormulaLexer extends Lexer {
 					}
 					switch (alt10) {
 						case 1 :
-							// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:
+							// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:
 							{
 							if ( (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 								input.consume();
@@ -763,7 +758,7 @@ public class FormulaLexer extends Lexer {
 					}
 
 					match('F'); 
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:84:21: ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:82:21: ( 'a' .. 'z' )?
 					int alt11=2;
 					int LA11_0 = input.LA(1);
 					if ( ((LA11_0 >= 'a' && LA11_0 <= 'z')) ) {
@@ -771,7 +766,7 @@ public class FormulaLexer extends Lexer {
 					}
 					switch (alt11) {
 						case 1 :
-							// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:
+							// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:
 							{
 							if ( (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 								input.consume();
@@ -789,10 +784,10 @@ public class FormulaLexer extends Lexer {
 					}
 					break;
 				case 5 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:85:4: 'E' ( 'a' .. 'z' )? 'G' ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:83:4: 'E' ( 'a' .. 'z' )? 'G' ( 'a' .. 'z' )?
 					{
 					match('E'); 
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:85:7: ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:83:7: ( 'a' .. 'z' )?
 					int alt12=2;
 					int LA12_0 = input.LA(1);
 					if ( ((LA12_0 >= 'a' && LA12_0 <= 'z')) ) {
@@ -800,7 +795,7 @@ public class FormulaLexer extends Lexer {
 					}
 					switch (alt12) {
 						case 1 :
-							// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:
+							// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:
 							{
 							if ( (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 								input.consume();
@@ -816,7 +811,7 @@ public class FormulaLexer extends Lexer {
 					}
 
 					match('G'); 
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:85:21: ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:83:21: ( 'a' .. 'z' )?
 					int alt13=2;
 					int LA13_0 = input.LA(1);
 					if ( ((LA13_0 >= 'a' && LA13_0 <= 'z')) ) {
@@ -824,7 +819,7 @@ public class FormulaLexer extends Lexer {
 					}
 					switch (alt13) {
 						case 1 :
-							// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:
+							// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:
 							{
 							if ( (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 								input.consume();
@@ -842,10 +837,10 @@ public class FormulaLexer extends Lexer {
 					}
 					break;
 				case 6 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:86:4: 'E' ( 'a' .. 'z' )? 'X' ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:84:4: 'E' ( 'a' .. 'z' )? 'X' ( 'a' .. 'z' )?
 					{
 					match('E'); 
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:86:7: ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:84:7: ( 'a' .. 'z' )?
 					int alt14=2;
 					int LA14_0 = input.LA(1);
 					if ( ((LA14_0 >= 'a' && LA14_0 <= 'z')) ) {
@@ -853,7 +848,7 @@ public class FormulaLexer extends Lexer {
 					}
 					switch (alt14) {
 						case 1 :
-							// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:
+							// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:
 							{
 							if ( (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 								input.consume();
@@ -869,7 +864,7 @@ public class FormulaLexer extends Lexer {
 					}
 
 					match('X'); 
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:86:21: ( 'a' .. 'z' )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:84:21: ( 'a' .. 'z' )?
 					int alt15=2;
 					int LA15_0 = input.LA(1);
 					if ( ((LA15_0 >= 'a' && LA15_0 <= 'z')) ) {
@@ -877,7 +872,7 @@ public class FormulaLexer extends Lexer {
 					}
 					switch (alt15) {
 						case 1 :
-							// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:
+							// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:
 							{
 							if ( (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 								input.consume();
@@ -910,10 +905,10 @@ public class FormulaLexer extends Lexer {
 		try {
 			int _type = WS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:90:8: ( ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+ )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:90:11: ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:88:8: ( ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+ )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:88:11: ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+
 			{
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:90:11: ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:88:11: ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+
 			int cnt17=0;
 			loop17:
 			while (true) {
@@ -925,7 +920,7 @@ public class FormulaLexer extends Lexer {
 
 				switch (alt17) {
 				case 1 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:
 					{
 					if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||(input.LA(1) >= '\f' && input.LA(1) <= '\r')||input.LA(1)==' ' ) {
 						input.consume();
@@ -960,7 +955,7 @@ public class FormulaLexer extends Lexer {
 
 	@Override
 	public void mTokens() throws RecognitionException {
-		// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:8: ( T__14 | T__15 | T__16 | T__17 | T__18 | TRUE | FALSE | ALL | EXISTS | UNTIL | OPEN | CLOSE | ATOMIC | TEMPORAL | WS )
+		// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:8: ( T__14 | T__15 | T__16 | T__17 | T__18 | TRUE | FALSE | ALL | EXISTS | UNTIL | OPEN | CLOSE | ATOMIC | TEMPORAL | WS )
 		int alt18=15;
 		switch ( input.LA(1) ) {
 		case '!':
@@ -1101,105 +1096,105 @@ public class FormulaLexer extends Lexer {
 		}
 		switch (alt18) {
 			case 1 :
-				// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:10: T__14
+				// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:10: T__14
 				{
 				mT__14(); 
 
 				}
 				break;
 			case 2 :
-				// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:16: T__15
+				// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:16: T__15
 				{
 				mT__15(); 
 
 				}
 				break;
 			case 3 :
-				// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:22: T__16
+				// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:22: T__16
 				{
 				mT__16(); 
 
 				}
 				break;
 			case 4 :
-				// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:28: T__17
+				// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:28: T__17
 				{
 				mT__17(); 
 
 				}
 				break;
 			case 5 :
-				// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:34: T__18
+				// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:34: T__18
 				{
 				mT__18(); 
 
 				}
 				break;
 			case 6 :
-				// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:40: TRUE
+				// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:40: TRUE
 				{
 				mTRUE(); 
 
 				}
 				break;
 			case 7 :
-				// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:45: FALSE
+				// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:45: FALSE
 				{
 				mFALSE(); 
 
 				}
 				break;
 			case 8 :
-				// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:51: ALL
+				// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:51: ALL
 				{
 				mALL(); 
 
 				}
 				break;
 			case 9 :
-				// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:55: EXISTS
+				// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:55: EXISTS
 				{
 				mEXISTS(); 
 
 				}
 				break;
 			case 10 :
-				// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:62: UNTIL
+				// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:62: UNTIL
 				{
 				mUNTIL(); 
 
 				}
 				break;
 			case 11 :
-				// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:68: OPEN
+				// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:68: OPEN
 				{
 				mOPEN(); 
 
 				}
 				break;
 			case 12 :
-				// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:73: CLOSE
+				// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:73: CLOSE
 				{
 				mCLOSE(); 
 
 				}
 				break;
 			case 13 :
-				// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:79: ATOMIC
+				// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:79: ATOMIC
 				{
 				mATOMIC(); 
 
 				}
 				break;
 			case 14 :
-				// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:86: TEMPORAL
+				// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:86: TEMPORAL
 				{
 				mTEMPORAL(); 
 
 				}
 				break;
 			case 15 :
-				// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:1:95: WS
+				// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:1:95: WS
 				{
 				mWS(); 
 

@@ -1,5 +1,4 @@
 package lsv.grammar;
-
 import lsv.model.CTL;
 /**
  * FormulaAlt class.

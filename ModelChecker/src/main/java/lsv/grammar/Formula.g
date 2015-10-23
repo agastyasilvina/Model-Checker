@@ -6,8 +6,6 @@ grammar Formula;
 options {
   language = Java;
 }
-
-
 query returns [Formula result]: formula EOF { $result = $formula.result;};
 
 formula returns [Formula result]: 

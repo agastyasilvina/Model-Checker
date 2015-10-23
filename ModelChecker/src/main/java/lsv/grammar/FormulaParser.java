@@ -1,15 +1,6 @@
+// $ANTLR 3.5.2 C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g 2015-10-23 10:06:45
 package lsv.grammar;
-
-// $ANTLR 3.5.2 /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g 2015-10-22 22:33:30
-
 import org.antlr.runtime.*;
-
-import antlr.NoViableAltException;
-import antlr.Parser;
-import antlr.RecognitionException;
-import antlr.Token;
-import antlr.TokenStream;
-
 import java.util.Stack;
 import java.util.List;
 import java.util.ArrayList;
@@ -57,12 +48,12 @@ public class FormulaParser extends Parser {
 	}
 
 	@Override public String[] getTokenNames() { return FormulaParser.tokenNames; }
-	@Override public String getGrammarFileName() { return "/Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g"; }
+	@Override public String getGrammarFileName() { return "C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g"; }
 
 
 
 	// $ANTLR start "query"
-	// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:11:1: query returns [Formula result] : formula EOF ;
+	// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:9:1: query returns [Formula result] : formula EOF ;
 	public final Formula query() throws RecognitionException {
 		Formula result = null;
 
@@ -70,14 +61,14 @@ public class FormulaParser extends Parser {
 		Formula formula1 =null;
 
 		try {
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:11:31: ( formula EOF )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:11:33: formula EOF
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:9:31: ( formula EOF )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:9:33: formula EOF
 			{
-			pushFollow(FOLLOW_formula_in_query30);
+			pushFollow(FOLLOW_formula_in_query28);
 			formula1=formula();
 			state._fsp--;
 
-			match(input,EOF,FOLLOW_EOF_in_query32); 
+			match(input,EOF,FOLLOW_EOF_in_query30); 
 			 result = formula1;
 			}
 
@@ -96,7 +87,7 @@ public class FormulaParser extends Parser {
 
 
 	// $ANTLR start "formula"
-	// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:13:1: formula returns [Formula result] : ( TRUE | FALSE | OPEN first ( op_bool second )? CLOSE | OPEN first op_bool ctl_end CLOSE | neg ctl_init | OPEN ctl_init ( op_bool ctl_end )? CLOSE | EXISTS OPEN first UNTIL second CLOSE | ALL OPEN first UNTIL second CLOSE | EXISTS OPEN first UNTIL ctl_end CLOSE | ALL OPEN first UNTIL ctl_end CLOSE | EXISTS OPEN ctl_init UNTIL ctl_end CLOSE | ALL OPEN ctl_init UNTIL ctl_end CLOSE | TEMPORAL OPEN first op_bool second CLOSE | TEMPORAL OPEN first CLOSE | TEMPORAL OPEN first op_bool ctl_end CLOSE | TEMPORAL OPEN ctl_init ( op_bool ctl_end )? CLOSE );
+	// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:11:1: formula returns [Formula result] : ( TRUE | FALSE | OPEN first ( op_bool second )? CLOSE | OPEN first op_bool ctl_end CLOSE | neg ctl_init | OPEN ctl_init ( op_bool ctl_end )? CLOSE | EXISTS OPEN first UNTIL second CLOSE | ALL OPEN first UNTIL second CLOSE | EXISTS OPEN first UNTIL ctl_end CLOSE | ALL OPEN first UNTIL ctl_end CLOSE | EXISTS OPEN ctl_init UNTIL ctl_end CLOSE | ALL OPEN ctl_init UNTIL ctl_end CLOSE | TEMPORAL OPEN first op_bool second CLOSE | TEMPORAL OPEN first CLOSE | TEMPORAL OPEN first op_bool ctl_end CLOSE | TEMPORAL OPEN ctl_init ( op_bool ctl_end )? CLOSE );
 	public final Formula formula() throws RecognitionException {
 		Formula result = null;
 
@@ -146,7 +137,7 @@ public class FormulaParser extends Parser {
 		ParserRuleReturnScope op_bool44 =null;
 
 		try {
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:13:33: ( TRUE | FALSE | OPEN first ( op_bool second )? CLOSE | OPEN first op_bool ctl_end CLOSE | neg ctl_init | OPEN ctl_init ( op_bool ctl_end )? CLOSE | EXISTS OPEN first UNTIL second CLOSE | ALL OPEN first UNTIL second CLOSE | EXISTS OPEN first UNTIL ctl_end CLOSE | ALL OPEN first UNTIL ctl_end CLOSE | EXISTS OPEN ctl_init UNTIL ctl_end CLOSE | ALL OPEN ctl_init UNTIL ctl_end CLOSE | TEMPORAL OPEN first op_bool second CLOSE | TEMPORAL OPEN first CLOSE | TEMPORAL OPEN first op_bool ctl_end CLOSE | TEMPORAL OPEN ctl_init ( op_bool ctl_end )? CLOSE )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:11:33: ( TRUE | FALSE | OPEN first ( op_bool second )? CLOSE | OPEN first op_bool ctl_end CLOSE | neg ctl_init | OPEN ctl_init ( op_bool ctl_end )? CLOSE | EXISTS OPEN first UNTIL second CLOSE | ALL OPEN first UNTIL second CLOSE | EXISTS OPEN first UNTIL ctl_end CLOSE | ALL OPEN first UNTIL ctl_end CLOSE | EXISTS OPEN ctl_init UNTIL ctl_end CLOSE | ALL OPEN ctl_init UNTIL ctl_end CLOSE | TEMPORAL OPEN first op_bool second CLOSE | TEMPORAL OPEN first CLOSE | TEMPORAL OPEN first op_bool ctl_end CLOSE | TEMPORAL OPEN ctl_init ( op_bool ctl_end )? CLOSE )
 			int alt4=16;
 			switch ( input.LA(1) ) {
 			case TRUE:
@@ -643,29 +634,29 @@ public class FormulaParser extends Parser {
 			}
 			switch (alt4) {
 				case 1 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:14:9: TRUE
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:12:9: TRUE
 					{
-					match(input,TRUE,FOLLOW_TRUE_in_formula54); 
+					match(input,TRUE,FOLLOW_TRUE_in_formula52); 
 					 result = new Formula(true);
 					}
 					break;
 				case 2 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:15:12: FALSE
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:13:12: FALSE
 					{
-					match(input,FALSE,FOLLOW_FALSE_in_formula69); 
+					match(input,FALSE,FOLLOW_FALSE_in_formula67); 
 					 result = new Formula(false);
 					}
 					break;
 				case 3 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:16:11: OPEN first ( op_bool second )? CLOSE
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:14:11: OPEN first ( op_bool second )? CLOSE
 					{
 					boolean op = false;
-					match(input,OPEN,FOLLOW_OPEN_in_formula85); 
-					pushFollow(FOLLOW_first_in_formula87);
+					match(input,OPEN,FOLLOW_OPEN_in_formula83); 
+					pushFollow(FOLLOW_first_in_formula85);
 					first2=first();
 					state._fsp--;
 
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:16:44: ( op_bool second )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:14:44: ( op_bool second )?
 					int alt1=2;
 					int LA1_0 = input.LA(1);
 					if ( ((LA1_0 >= 15 && LA1_0 <= 18)) ) {
@@ -673,13 +664,13 @@ public class FormulaParser extends Parser {
 					}
 					switch (alt1) {
 						case 1 :
-							// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:16:45: op_bool second
+							// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:14:45: op_bool second
 							{
-							pushFollow(FOLLOW_op_bool_in_formula90);
+							pushFollow(FOLLOW_op_bool_in_formula88);
 							op_bool4=op_bool();
 							state._fsp--;
 
-							pushFollow(FOLLOW_second_in_formula92);
+							pushFollow(FOLLOW_second_in_formula90);
 							second3=second();
 							state._fsp--;
 
@@ -689,7 +680,7 @@ public class FormulaParser extends Parser {
 
 					}
 
-					match(input,CLOSE,FOLLOW_CLOSE_in_formula98); 
+					match(input,CLOSE,FOLLOW_CLOSE_in_formula96); 
 					 if (op) {
 					        	 	  result = new Formula( first2, second3,  (op_bool4!=null?((FormulaParser.op_bool_return)op_bool4).result:null));
 					        	  } else {
@@ -699,33 +690,33 @@ public class FormulaParser extends Parser {
 					}
 					break;
 				case 4 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:23:11: OPEN first op_bool ctl_end CLOSE
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:21:11: OPEN first op_bool ctl_end CLOSE
 					{
-					match(input,OPEN,FOLLOW_OPEN_in_formula123); 
-					pushFollow(FOLLOW_first_in_formula125);
+					match(input,OPEN,FOLLOW_OPEN_in_formula121); 
+					pushFollow(FOLLOW_first_in_formula123);
 					first5=first();
 					state._fsp--;
 
-					pushFollow(FOLLOW_op_bool_in_formula127);
+					pushFollow(FOLLOW_op_bool_in_formula125);
 					op_bool7=op_bool();
 					state._fsp--;
 
-					pushFollow(FOLLOW_ctl_end_in_formula129);
+					pushFollow(FOLLOW_ctl_end_in_formula127);
 					ctl_end6=ctl_end();
 					state._fsp--;
 
-					match(input,CLOSE,FOLLOW_CLOSE_in_formula131); 
+					match(input,CLOSE,FOLLOW_CLOSE_in_formula129); 
 					result = new Formula(first5, ctl_end6, (op_bool7!=null?((FormulaParser.op_bool_return)op_bool7).result:null));
 					}
 					break;
 				case 5 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:24:11: neg ctl_init
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:22:11: neg ctl_init
 					{
-					pushFollow(FOLLOW_neg_in_formula145);
+					pushFollow(FOLLOW_neg_in_formula143);
 					neg8=neg();
 					state._fsp--;
 
-					pushFollow(FOLLOW_ctl_init_in_formula147);
+					pushFollow(FOLLOW_ctl_init_in_formula145);
 					ctl_init9=ctl_init();
 					state._fsp--;
 
@@ -733,15 +724,15 @@ public class FormulaParser extends Parser {
 					}
 					break;
 				case 6 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:25:8: OPEN ctl_init ( op_bool ctl_end )? CLOSE
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:23:8: OPEN ctl_init ( op_bool ctl_end )? CLOSE
 					{
 					boolean op = false;
-					match(input,OPEN,FOLLOW_OPEN_in_formula160); 
-					pushFollow(FOLLOW_ctl_init_in_formula162);
+					match(input,OPEN,FOLLOW_OPEN_in_formula158); 
+					pushFollow(FOLLOW_ctl_init_in_formula160);
 					ctl_init10=ctl_init();
 					state._fsp--;
 
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:25:44: ( op_bool ctl_end )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:23:44: ( op_bool ctl_end )?
 					int alt2=2;
 					int LA2_0 = input.LA(1);
 					if ( ((LA2_0 >= 15 && LA2_0 <= 18)) ) {
@@ -749,13 +740,13 @@ public class FormulaParser extends Parser {
 					}
 					switch (alt2) {
 						case 1 :
-							// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:25:45: op_bool ctl_end
+							// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:23:45: op_bool ctl_end
 							{
-							pushFollow(FOLLOW_op_bool_in_formula165);
+							pushFollow(FOLLOW_op_bool_in_formula163);
 							op_bool12=op_bool();
 							state._fsp--;
 
-							pushFollow(FOLLOW_ctl_end_in_formula167);
+							pushFollow(FOLLOW_ctl_end_in_formula165);
 							ctl_end11=ctl_end();
 							state._fsp--;
 
@@ -765,7 +756,7 @@ public class FormulaParser extends Parser {
 
 					}
 
-					match(input,CLOSE,FOLLOW_CLOSE_in_formula173); 
+					match(input,CLOSE,FOLLOW_CLOSE_in_formula171); 
 					 if (op) {
 					        	 	  result = new Formula( ctl_init10,  ctl_end11, (op_bool12!=null?((FormulaParser.op_bool_return)op_bool12).result:null));
 					        	 	  } else {
@@ -774,179 +765,179 @@ public class FormulaParser extends Parser {
 					}
 					break;
 				case 7 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:31:11: EXISTS OPEN first UNTIL second CLOSE
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:29:11: EXISTS OPEN first UNTIL second CLOSE
 					{
-					match(input,EXISTS,FOLLOW_EXISTS_in_formula199); 
-					match(input,OPEN,FOLLOW_OPEN_in_formula201); 
-					pushFollow(FOLLOW_first_in_formula203);
+					match(input,EXISTS,FOLLOW_EXISTS_in_formula197); 
+					match(input,OPEN,FOLLOW_OPEN_in_formula199); 
+					pushFollow(FOLLOW_first_in_formula201);
 					first13=first();
 					state._fsp--;
 
-					UNTIL15=(Token)match(input,UNTIL,FOLLOW_UNTIL_in_formula205); 
-					pushFollow(FOLLOW_second_in_formula207);
+					UNTIL15=(Token)match(input,UNTIL,FOLLOW_UNTIL_in_formula203); 
+					pushFollow(FOLLOW_second_in_formula205);
 					second14=second();
 					state._fsp--;
 
-					match(input,CLOSE,FOLLOW_CLOSE_in_formula209); 
+					match(input,CLOSE,FOLLOW_CLOSE_in_formula207); 
 					 result = new Formula("E", first13, second14, (UNTIL15!=null?UNTIL15.getText():null));
 					}
 					break;
 				case 8 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:32:11: ALL OPEN first UNTIL second CLOSE
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:30:11: ALL OPEN first UNTIL second CLOSE
 					{
-					match(input,ALL,FOLLOW_ALL_in_formula223); 
-					match(input,OPEN,FOLLOW_OPEN_in_formula225); 
-					pushFollow(FOLLOW_first_in_formula227);
+					match(input,ALL,FOLLOW_ALL_in_formula221); 
+					match(input,OPEN,FOLLOW_OPEN_in_formula223); 
+					pushFollow(FOLLOW_first_in_formula225);
 					first16=first();
 					state._fsp--;
 
-					UNTIL18=(Token)match(input,UNTIL,FOLLOW_UNTIL_in_formula229); 
-					pushFollow(FOLLOW_second_in_formula231);
+					UNTIL18=(Token)match(input,UNTIL,FOLLOW_UNTIL_in_formula227); 
+					pushFollow(FOLLOW_second_in_formula229);
 					second17=second();
 					state._fsp--;
 
-					match(input,CLOSE,FOLLOW_CLOSE_in_formula233); 
+					match(input,CLOSE,FOLLOW_CLOSE_in_formula231); 
 					 result = new Formula("A", first16, second17, (UNTIL18!=null?UNTIL18.getText():null));
 					}
 					break;
 				case 9 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:33:11: EXISTS OPEN first UNTIL ctl_end CLOSE
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:31:11: EXISTS OPEN first UNTIL ctl_end CLOSE
 					{
-					match(input,EXISTS,FOLLOW_EXISTS_in_formula247); 
-					match(input,OPEN,FOLLOW_OPEN_in_formula249); 
-					pushFollow(FOLLOW_first_in_formula251);
+					match(input,EXISTS,FOLLOW_EXISTS_in_formula245); 
+					match(input,OPEN,FOLLOW_OPEN_in_formula247); 
+					pushFollow(FOLLOW_first_in_formula249);
 					first19=first();
 					state._fsp--;
 
-					UNTIL21=(Token)match(input,UNTIL,FOLLOW_UNTIL_in_formula253); 
-					pushFollow(FOLLOW_ctl_end_in_formula255);
+					UNTIL21=(Token)match(input,UNTIL,FOLLOW_UNTIL_in_formula251); 
+					pushFollow(FOLLOW_ctl_end_in_formula253);
 					ctl_end20=ctl_end();
 					state._fsp--;
 
-					match(input,CLOSE,FOLLOW_CLOSE_in_formula257); 
+					match(input,CLOSE,FOLLOW_CLOSE_in_formula255); 
 					 result = new Formula("E", first19, ctl_end20, (UNTIL21!=null?UNTIL21.getText():null));
 					}
 					break;
 				case 10 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:34:11: ALL OPEN first UNTIL ctl_end CLOSE
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:32:11: ALL OPEN first UNTIL ctl_end CLOSE
 					{
-					match(input,ALL,FOLLOW_ALL_in_formula271); 
-					match(input,OPEN,FOLLOW_OPEN_in_formula273); 
-					pushFollow(FOLLOW_first_in_formula275);
+					match(input,ALL,FOLLOW_ALL_in_formula269); 
+					match(input,OPEN,FOLLOW_OPEN_in_formula271); 
+					pushFollow(FOLLOW_first_in_formula273);
 					first22=first();
 					state._fsp--;
 
-					UNTIL24=(Token)match(input,UNTIL,FOLLOW_UNTIL_in_formula277); 
-					pushFollow(FOLLOW_ctl_end_in_formula279);
+					UNTIL24=(Token)match(input,UNTIL,FOLLOW_UNTIL_in_formula275); 
+					pushFollow(FOLLOW_ctl_end_in_formula277);
 					ctl_end23=ctl_end();
 					state._fsp--;
 
-					match(input,CLOSE,FOLLOW_CLOSE_in_formula281); 
+					match(input,CLOSE,FOLLOW_CLOSE_in_formula279); 
 					 result = new Formula("A", first22, ctl_end23, (UNTIL24!=null?UNTIL24.getText():null));
 					}
 					break;
 				case 11 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:35:11: EXISTS OPEN ctl_init UNTIL ctl_end CLOSE
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:33:11: EXISTS OPEN ctl_init UNTIL ctl_end CLOSE
 					{
-					match(input,EXISTS,FOLLOW_EXISTS_in_formula295); 
-					match(input,OPEN,FOLLOW_OPEN_in_formula297); 
-					pushFollow(FOLLOW_ctl_init_in_formula299);
+					match(input,EXISTS,FOLLOW_EXISTS_in_formula293); 
+					match(input,OPEN,FOLLOW_OPEN_in_formula295); 
+					pushFollow(FOLLOW_ctl_init_in_formula297);
 					ctl_init25=ctl_init();
 					state._fsp--;
 
-					UNTIL27=(Token)match(input,UNTIL,FOLLOW_UNTIL_in_formula301); 
-					pushFollow(FOLLOW_ctl_end_in_formula303);
+					UNTIL27=(Token)match(input,UNTIL,FOLLOW_UNTIL_in_formula299); 
+					pushFollow(FOLLOW_ctl_end_in_formula301);
 					ctl_end26=ctl_end();
 					state._fsp--;
 
-					match(input,CLOSE,FOLLOW_CLOSE_in_formula305); 
+					match(input,CLOSE,FOLLOW_CLOSE_in_formula303); 
 					 result = new Formula( "E",ctl_init25,  ctl_end26, (UNTIL27!=null?UNTIL27.getText():null)); 
 					}
 					break;
 				case 12 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:36:11: ALL OPEN ctl_init UNTIL ctl_end CLOSE
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:34:11: ALL OPEN ctl_init UNTIL ctl_end CLOSE
 					{
-					match(input,ALL,FOLLOW_ALL_in_formula319); 
-					match(input,OPEN,FOLLOW_OPEN_in_formula321); 
-					pushFollow(FOLLOW_ctl_init_in_formula323);
+					match(input,ALL,FOLLOW_ALL_in_formula317); 
+					match(input,OPEN,FOLLOW_OPEN_in_formula319); 
+					pushFollow(FOLLOW_ctl_init_in_formula321);
 					ctl_init28=ctl_init();
 					state._fsp--;
 
-					UNTIL30=(Token)match(input,UNTIL,FOLLOW_UNTIL_in_formula325); 
-					pushFollow(FOLLOW_ctl_end_in_formula327);
+					UNTIL30=(Token)match(input,UNTIL,FOLLOW_UNTIL_in_formula323); 
+					pushFollow(FOLLOW_ctl_end_in_formula325);
 					ctl_end29=ctl_end();
 					state._fsp--;
 
-					match(input,CLOSE,FOLLOW_CLOSE_in_formula329); 
+					match(input,CLOSE,FOLLOW_CLOSE_in_formula327); 
 					 result = new Formula( "A", ctl_init28,  ctl_end29, (UNTIL30!=null?UNTIL30.getText():null)); 
 					}
 					break;
 				case 13 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:37:11: TEMPORAL OPEN first op_bool second CLOSE
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:35:11: TEMPORAL OPEN first op_bool second CLOSE
 					{
-					TEMPORAL31=(Token)match(input,TEMPORAL,FOLLOW_TEMPORAL_in_formula344); 
-					match(input,OPEN,FOLLOW_OPEN_in_formula346); 
-					pushFollow(FOLLOW_first_in_formula348);
+					TEMPORAL31=(Token)match(input,TEMPORAL,FOLLOW_TEMPORAL_in_formula342); 
+					match(input,OPEN,FOLLOW_OPEN_in_formula344); 
+					pushFollow(FOLLOW_first_in_formula346);
 					first32=first();
 					state._fsp--;
 
-					pushFollow(FOLLOW_op_bool_in_formula350);
+					pushFollow(FOLLOW_op_bool_in_formula348);
 					op_bool34=op_bool();
 					state._fsp--;
 
-					pushFollow(FOLLOW_second_in_formula352);
+					pushFollow(FOLLOW_second_in_formula350);
 					second33=second();
 					state._fsp--;
 
-					match(input,CLOSE,FOLLOW_CLOSE_in_formula354); 
+					match(input,CLOSE,FOLLOW_CLOSE_in_formula352); 
 					 result = new Formula((TEMPORAL31!=null?TEMPORAL31.getText():null), first32, second33, (op_bool34!=null?input.toString(op_bool34.start,op_bool34.stop):null));
 					}
 					break;
 				case 14 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:38:11: TEMPORAL OPEN first CLOSE
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:36:11: TEMPORAL OPEN first CLOSE
 					{
-					TEMPORAL35=(Token)match(input,TEMPORAL,FOLLOW_TEMPORAL_in_formula368); 
-					match(input,OPEN,FOLLOW_OPEN_in_formula370); 
-					pushFollow(FOLLOW_first_in_formula372);
+					TEMPORAL35=(Token)match(input,TEMPORAL,FOLLOW_TEMPORAL_in_formula366); 
+					match(input,OPEN,FOLLOW_OPEN_in_formula368); 
+					pushFollow(FOLLOW_first_in_formula370);
 					first36=first();
 					state._fsp--;
 
-					match(input,CLOSE,FOLLOW_CLOSE_in_formula374); 
+					match(input,CLOSE,FOLLOW_CLOSE_in_formula372); 
 					 result = new Formula((TEMPORAL35!=null?TEMPORAL35.getText():null), first36);
 					}
 					break;
 				case 15 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:39:11: TEMPORAL OPEN first op_bool ctl_end CLOSE
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:37:11: TEMPORAL OPEN first op_bool ctl_end CLOSE
 					{
-					TEMPORAL37=(Token)match(input,TEMPORAL,FOLLOW_TEMPORAL_in_formula388); 
-					match(input,OPEN,FOLLOW_OPEN_in_formula390); 
-					pushFollow(FOLLOW_first_in_formula392);
+					TEMPORAL37=(Token)match(input,TEMPORAL,FOLLOW_TEMPORAL_in_formula386); 
+					match(input,OPEN,FOLLOW_OPEN_in_formula388); 
+					pushFollow(FOLLOW_first_in_formula390);
 					first38=first();
 					state._fsp--;
 
-					pushFollow(FOLLOW_op_bool_in_formula394);
+					pushFollow(FOLLOW_op_bool_in_formula392);
 					op_bool40=op_bool();
 					state._fsp--;
 
-					pushFollow(FOLLOW_ctl_end_in_formula396);
+					pushFollow(FOLLOW_ctl_end_in_formula394);
 					ctl_end39=ctl_end();
 					state._fsp--;
 
-					match(input,CLOSE,FOLLOW_CLOSE_in_formula398); 
+					match(input,CLOSE,FOLLOW_CLOSE_in_formula396); 
 					 result = new Formula((TEMPORAL37!=null?TEMPORAL37.getText():null), first38, ctl_end39, (op_bool40!=null?input.toString(op_bool40.start,op_bool40.stop):null));
 					}
 					break;
 				case 16 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:40:11: TEMPORAL OPEN ctl_init ( op_bool ctl_end )? CLOSE
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:38:11: TEMPORAL OPEN ctl_init ( op_bool ctl_end )? CLOSE
 					{
 					boolean op = false;
-					TEMPORAL41=(Token)match(input,TEMPORAL,FOLLOW_TEMPORAL_in_formula414); 
-					match(input,OPEN,FOLLOW_OPEN_in_formula416); 
-					pushFollow(FOLLOW_ctl_init_in_formula418);
+					TEMPORAL41=(Token)match(input,TEMPORAL,FOLLOW_TEMPORAL_in_formula412); 
+					match(input,OPEN,FOLLOW_OPEN_in_formula414); 
+					pushFollow(FOLLOW_ctl_init_in_formula416);
 					ctl_init42=ctl_init();
 					state._fsp--;
 
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:40:56: ( op_bool ctl_end )?
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:38:56: ( op_bool ctl_end )?
 					int alt3=2;
 					int LA3_0 = input.LA(1);
 					if ( ((LA3_0 >= 15 && LA3_0 <= 18)) ) {
@@ -954,13 +945,13 @@ public class FormulaParser extends Parser {
 					}
 					switch (alt3) {
 						case 1 :
-							// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:40:57: op_bool ctl_end
+							// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:38:57: op_bool ctl_end
 							{
-							pushFollow(FOLLOW_op_bool_in_formula421);
+							pushFollow(FOLLOW_op_bool_in_formula419);
 							op_bool44=op_bool();
 							state._fsp--;
 
-							pushFollow(FOLLOW_ctl_end_in_formula423);
+							pushFollow(FOLLOW_ctl_end_in_formula421);
 							ctl_end43=ctl_end();
 							state._fsp--;
 
@@ -970,7 +961,7 @@ public class FormulaParser extends Parser {
 
 					}
 
-					match(input,CLOSE,FOLLOW_CLOSE_in_formula429); 
+					match(input,CLOSE,FOLLOW_CLOSE_in_formula427); 
 					 if (op) {
 					        	 	  result = new Formula((TEMPORAL41!=null?TEMPORAL41.getText():null), ctl_init42,  ctl_end43, (op_bool44!=null?((FormulaParser.op_bool_return)op_bool44).result:null));
 					        	 	  } else {
@@ -995,7 +986,7 @@ public class FormulaParser extends Parser {
 
 
 	// $ANTLR start "first"
-	// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:48:1: first returns [String result] : ATOMIC ;
+	// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:46:1: first returns [String result] : ATOMIC ;
 	public final String first() throws RecognitionException {
 		String result = null;
 
@@ -1003,10 +994,10 @@ public class FormulaParser extends Parser {
 		Token ATOMIC45=null;
 
 		try {
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:48:30: ( ATOMIC )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:48:32: ATOMIC
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:46:30: ( ATOMIC )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:46:32: ATOMIC
 			{
-			ATOMIC45=(Token)match(input,ATOMIC,FOLLOW_ATOMIC_in_first460); 
+			ATOMIC45=(Token)match(input,ATOMIC,FOLLOW_ATOMIC_in_first458); 
 			result = (ATOMIC45!=null?ATOMIC45.getText():null);
 			}
 
@@ -1025,7 +1016,7 @@ public class FormulaParser extends Parser {
 
 
 	// $ANTLR start "second"
-	// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:49:1: second returns [String result] : ATOMIC ;
+	// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:47:1: second returns [String result] : ATOMIC ;
 	public final String second() throws RecognitionException {
 		String result = null;
 
@@ -1033,10 +1024,10 @@ public class FormulaParser extends Parser {
 		Token ATOMIC46=null;
 
 		try {
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:49:31: ( ATOMIC )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:49:33: ATOMIC
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:47:31: ( ATOMIC )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:47:33: ATOMIC
 			{
-			ATOMIC46=(Token)match(input,ATOMIC,FOLLOW_ATOMIC_in_second472); 
+			ATOMIC46=(Token)match(input,ATOMIC,FOLLOW_ATOMIC_in_second470); 
 			result = (ATOMIC46!=null?ATOMIC46.getText():null);
 			}
 
@@ -1055,7 +1046,7 @@ public class FormulaParser extends Parser {
 
 
 	// $ANTLR start "ctl_init"
-	// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:51:1: ctl_init returns [Formula result] : formula ;
+	// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:49:1: ctl_init returns [Formula result] : formula ;
 	public final Formula ctl_init() throws RecognitionException {
 		Formula result = null;
 
@@ -1063,10 +1054,10 @@ public class FormulaParser extends Parser {
 		Formula formula47 =null;
 
 		try {
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:51:34: ( formula )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:52:5: formula
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:49:34: ( formula )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:50:5: formula
 			{
-			pushFollow(FOLLOW_formula_in_ctl_init489);
+			pushFollow(FOLLOW_formula_in_ctl_init487);
 			formula47=formula();
 			state._fsp--;
 
@@ -1088,7 +1079,7 @@ public class FormulaParser extends Parser {
 
 
 	// $ANTLR start "ctl_end"
-	// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:55:1: ctl_end returns [Formula result] : formula ;
+	// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:53:1: ctl_end returns [Formula result] : formula ;
 	public final Formula ctl_end() throws RecognitionException {
 		Formula result = null;
 
@@ -1096,10 +1087,10 @@ public class FormulaParser extends Parser {
 		Formula formula48 =null;
 
 		try {
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:55:33: ( formula )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:56:5: formula
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:53:33: ( formula )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:54:5: formula
 			{
-			pushFollow(FOLLOW_formula_in_ctl_end510);
+			pushFollow(FOLLOW_formula_in_ctl_end508);
 			formula48=formula();
 			state._fsp--;
 
@@ -1121,16 +1112,16 @@ public class FormulaParser extends Parser {
 
 
 	// $ANTLR start "neg"
-	// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:59:1: neg returns [boolean result] : '!' ;
+	// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:57:1: neg returns [boolean result] : '!' ;
 	public final boolean neg() throws RecognitionException {
 		boolean result = false;
 
 
 		try {
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:59:31: ( '!' )
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:60:4: '!'
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:57:31: ( '!' )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:58:4: '!'
 			{
-			match(input,14,FOLLOW_14_in_neg532); 
+			match(input,14,FOLLOW_14_in_neg530); 
 			 result = true; 
 			}
 
@@ -1153,13 +1144,13 @@ public class FormulaParser extends Parser {
 
 
 	// $ANTLR start "op_bool"
-	// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:64:1: op_bool returns [String result] : ( '&&' | '||' | '=>' | '<=>' );
+	// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:62:1: op_bool returns [String result] : ( '&&' | '||' | '=>' | '<=>' );
 	public final FormulaParser.op_bool_return op_bool() throws RecognitionException {
 		FormulaParser.op_bool_return retval = new FormulaParser.op_bool_return();
 		retval.start = input.LT(1);
 
 		try {
-			// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:64:32: ( '&&' | '||' | '=>' | '<=>' )
+			// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:62:32: ( '&&' | '||' | '=>' | '<=>' )
 			int alt5=4;
 			switch ( input.LA(1) ) {
 			case 15:
@@ -1189,30 +1180,30 @@ public class FormulaParser extends Parser {
 			}
 			switch (alt5) {
 				case 1 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:65:6: '&&'
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:63:6: '&&'
 					{
-					match(input,15,FOLLOW_15_in_op_bool556); 
+					match(input,15,FOLLOW_15_in_op_bool554); 
 					retval.result = "&&";
 					}
 					break;
 				case 2 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:66:7: '||'
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:64:7: '||'
 					{
-					match(input,18,FOLLOW_18_in_op_bool566); 
+					match(input,18,FOLLOW_18_in_op_bool564); 
 					retval.result = "||"; 
 					}
 					break;
 				case 3 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:67:7: '=>'
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:65:7: '=>'
 					{
-					match(input,17,FOLLOW_17_in_op_bool577); 
+					match(input,17,FOLLOW_17_in_op_bool575); 
 					retval.result = "=>";
 					}
 					break;
 				case 4 :
-					// /Users/luca/Documents/workspace/SimpleModelChecker/src/Formula.g:68:7: '<=>'
+					// C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g:66:7: '<=>'
 					{
-					match(input,16,FOLLOW_16_in_op_bool587); 
+					match(input,16,FOLLOW_16_in_op_bool585); 
 					retval.result = "<=>";
 					}
 					break;
@@ -1236,92 +1227,92 @@ public class FormulaParser extends Parser {
 
 
 
-	public static final BitSet FOLLOW_formula_in_query30 = new BitSet(new long[]{0x0000000000000000L});
-	public static final BitSet FOLLOW_EOF_in_query32 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_TRUE_in_formula54 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_FALSE_in_formula69 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_OPEN_in_formula85 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_first_in_formula87 = new BitSet(new long[]{0x0000000000078040L});
-	public static final BitSet FOLLOW_op_bool_in_formula90 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_second_in_formula92 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_CLOSE_in_formula98 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_OPEN_in_formula123 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_first_in_formula125 = new BitSet(new long[]{0x0000000000078000L});
-	public static final BitSet FOLLOW_op_bool_in_formula127 = new BitSet(new long[]{0x0000000000004F90L});
-	public static final BitSet FOLLOW_ctl_end_in_formula129 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_CLOSE_in_formula131 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_neg_in_formula145 = new BitSet(new long[]{0x0000000000004F90L});
-	public static final BitSet FOLLOW_ctl_init_in_formula147 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_OPEN_in_formula160 = new BitSet(new long[]{0x0000000000004F90L});
-	public static final BitSet FOLLOW_ctl_init_in_formula162 = new BitSet(new long[]{0x0000000000078040L});
-	public static final BitSet FOLLOW_op_bool_in_formula165 = new BitSet(new long[]{0x0000000000004F90L});
-	public static final BitSet FOLLOW_ctl_end_in_formula167 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_CLOSE_in_formula173 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_EXISTS_in_formula199 = new BitSet(new long[]{0x0000000000000200L});
-	public static final BitSet FOLLOW_OPEN_in_formula201 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_first_in_formula203 = new BitSet(new long[]{0x0000000000001000L});
-	public static final BitSet FOLLOW_UNTIL_in_formula205 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_second_in_formula207 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_CLOSE_in_formula209 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ALL_in_formula223 = new BitSet(new long[]{0x0000000000000200L});
-	public static final BitSet FOLLOW_OPEN_in_formula225 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_first_in_formula227 = new BitSet(new long[]{0x0000000000001000L});
-	public static final BitSet FOLLOW_UNTIL_in_formula229 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_second_in_formula231 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_CLOSE_in_formula233 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_EXISTS_in_formula247 = new BitSet(new long[]{0x0000000000000200L});
-	public static final BitSet FOLLOW_OPEN_in_formula249 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_first_in_formula251 = new BitSet(new long[]{0x0000000000001000L});
-	public static final BitSet FOLLOW_UNTIL_in_formula253 = new BitSet(new long[]{0x0000000000004F90L});
-	public static final BitSet FOLLOW_ctl_end_in_formula255 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_CLOSE_in_formula257 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ALL_in_formula271 = new BitSet(new long[]{0x0000000000000200L});
-	public static final BitSet FOLLOW_OPEN_in_formula273 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_first_in_formula275 = new BitSet(new long[]{0x0000000000001000L});
-	public static final BitSet FOLLOW_UNTIL_in_formula277 = new BitSet(new long[]{0x0000000000004F90L});
-	public static final BitSet FOLLOW_ctl_end_in_formula279 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_CLOSE_in_formula281 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_EXISTS_in_formula295 = new BitSet(new long[]{0x0000000000000200L});
-	public static final BitSet FOLLOW_OPEN_in_formula297 = new BitSet(new long[]{0x0000000000004F90L});
-	public static final BitSet FOLLOW_ctl_init_in_formula299 = new BitSet(new long[]{0x0000000000001000L});
-	public static final BitSet FOLLOW_UNTIL_in_formula301 = new BitSet(new long[]{0x0000000000004F90L});
-	public static final BitSet FOLLOW_ctl_end_in_formula303 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_CLOSE_in_formula305 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ALL_in_formula319 = new BitSet(new long[]{0x0000000000000200L});
-	public static final BitSet FOLLOW_OPEN_in_formula321 = new BitSet(new long[]{0x0000000000004F90L});
-	public static final BitSet FOLLOW_ctl_init_in_formula323 = new BitSet(new long[]{0x0000000000001000L});
-	public static final BitSet FOLLOW_UNTIL_in_formula325 = new BitSet(new long[]{0x0000000000004F90L});
-	public static final BitSet FOLLOW_ctl_end_in_formula327 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_CLOSE_in_formula329 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_TEMPORAL_in_formula344 = new BitSet(new long[]{0x0000000000000200L});
-	public static final BitSet FOLLOW_OPEN_in_formula346 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_first_in_formula348 = new BitSet(new long[]{0x0000000000078000L});
-	public static final BitSet FOLLOW_op_bool_in_formula350 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_second_in_formula352 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_CLOSE_in_formula354 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_TEMPORAL_in_formula368 = new BitSet(new long[]{0x0000000000000200L});
-	public static final BitSet FOLLOW_OPEN_in_formula370 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_first_in_formula372 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_CLOSE_in_formula374 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_TEMPORAL_in_formula388 = new BitSet(new long[]{0x0000000000000200L});
-	public static final BitSet FOLLOW_OPEN_in_formula390 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_first_in_formula392 = new BitSet(new long[]{0x0000000000078000L});
-	public static final BitSet FOLLOW_op_bool_in_formula394 = new BitSet(new long[]{0x0000000000004F90L});
-	public static final BitSet FOLLOW_ctl_end_in_formula396 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_CLOSE_in_formula398 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_TEMPORAL_in_formula414 = new BitSet(new long[]{0x0000000000000200L});
-	public static final BitSet FOLLOW_OPEN_in_formula416 = new BitSet(new long[]{0x0000000000004F90L});
-	public static final BitSet FOLLOW_ctl_init_in_formula418 = new BitSet(new long[]{0x0000000000078040L});
-	public static final BitSet FOLLOW_op_bool_in_formula421 = new BitSet(new long[]{0x0000000000004F90L});
-	public static final BitSet FOLLOW_ctl_end_in_formula423 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_CLOSE_in_formula429 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ATOMIC_in_first460 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ATOMIC_in_second472 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_formula_in_ctl_init489 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_formula_in_ctl_end510 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_14_in_neg532 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_15_in_op_bool556 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_18_in_op_bool566 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_17_in_op_bool577 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_16_in_op_bool587 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_formula_in_query28 = new BitSet(new long[]{0x0000000000000000L});
+	public static final BitSet FOLLOW_EOF_in_query30 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_TRUE_in_formula52 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_FALSE_in_formula67 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_OPEN_in_formula83 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_first_in_formula85 = new BitSet(new long[]{0x0000000000078040L});
+	public static final BitSet FOLLOW_op_bool_in_formula88 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_second_in_formula90 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_CLOSE_in_formula96 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_OPEN_in_formula121 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_first_in_formula123 = new BitSet(new long[]{0x0000000000078000L});
+	public static final BitSet FOLLOW_op_bool_in_formula125 = new BitSet(new long[]{0x0000000000004F90L});
+	public static final BitSet FOLLOW_ctl_end_in_formula127 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_CLOSE_in_formula129 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_neg_in_formula143 = new BitSet(new long[]{0x0000000000004F90L});
+	public static final BitSet FOLLOW_ctl_init_in_formula145 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_OPEN_in_formula158 = new BitSet(new long[]{0x0000000000004F90L});
+	public static final BitSet FOLLOW_ctl_init_in_formula160 = new BitSet(new long[]{0x0000000000078040L});
+	public static final BitSet FOLLOW_op_bool_in_formula163 = new BitSet(new long[]{0x0000000000004F90L});
+	public static final BitSet FOLLOW_ctl_end_in_formula165 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_CLOSE_in_formula171 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_EXISTS_in_formula197 = new BitSet(new long[]{0x0000000000000200L});
+	public static final BitSet FOLLOW_OPEN_in_formula199 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_first_in_formula201 = new BitSet(new long[]{0x0000000000001000L});
+	public static final BitSet FOLLOW_UNTIL_in_formula203 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_second_in_formula205 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_CLOSE_in_formula207 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ALL_in_formula221 = new BitSet(new long[]{0x0000000000000200L});
+	public static final BitSet FOLLOW_OPEN_in_formula223 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_first_in_formula225 = new BitSet(new long[]{0x0000000000001000L});
+	public static final BitSet FOLLOW_UNTIL_in_formula227 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_second_in_formula229 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_CLOSE_in_formula231 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_EXISTS_in_formula245 = new BitSet(new long[]{0x0000000000000200L});
+	public static final BitSet FOLLOW_OPEN_in_formula247 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_first_in_formula249 = new BitSet(new long[]{0x0000000000001000L});
+	public static final BitSet FOLLOW_UNTIL_in_formula251 = new BitSet(new long[]{0x0000000000004F90L});
+	public static final BitSet FOLLOW_ctl_end_in_formula253 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_CLOSE_in_formula255 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ALL_in_formula269 = new BitSet(new long[]{0x0000000000000200L});
+	public static final BitSet FOLLOW_OPEN_in_formula271 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_first_in_formula273 = new BitSet(new long[]{0x0000000000001000L});
+	public static final BitSet FOLLOW_UNTIL_in_formula275 = new BitSet(new long[]{0x0000000000004F90L});
+	public static final BitSet FOLLOW_ctl_end_in_formula277 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_CLOSE_in_formula279 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_EXISTS_in_formula293 = new BitSet(new long[]{0x0000000000000200L});
+	public static final BitSet FOLLOW_OPEN_in_formula295 = new BitSet(new long[]{0x0000000000004F90L});
+	public static final BitSet FOLLOW_ctl_init_in_formula297 = new BitSet(new long[]{0x0000000000001000L});
+	public static final BitSet FOLLOW_UNTIL_in_formula299 = new BitSet(new long[]{0x0000000000004F90L});
+	public static final BitSet FOLLOW_ctl_end_in_formula301 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_CLOSE_in_formula303 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ALL_in_formula317 = new BitSet(new long[]{0x0000000000000200L});
+	public static final BitSet FOLLOW_OPEN_in_formula319 = new BitSet(new long[]{0x0000000000004F90L});
+	public static final BitSet FOLLOW_ctl_init_in_formula321 = new BitSet(new long[]{0x0000000000001000L});
+	public static final BitSet FOLLOW_UNTIL_in_formula323 = new BitSet(new long[]{0x0000000000004F90L});
+	public static final BitSet FOLLOW_ctl_end_in_formula325 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_CLOSE_in_formula327 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_TEMPORAL_in_formula342 = new BitSet(new long[]{0x0000000000000200L});
+	public static final BitSet FOLLOW_OPEN_in_formula344 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_first_in_formula346 = new BitSet(new long[]{0x0000000000078000L});
+	public static final BitSet FOLLOW_op_bool_in_formula348 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_second_in_formula350 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_CLOSE_in_formula352 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_TEMPORAL_in_formula366 = new BitSet(new long[]{0x0000000000000200L});
+	public static final BitSet FOLLOW_OPEN_in_formula368 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_first_in_formula370 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_CLOSE_in_formula372 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_TEMPORAL_in_formula386 = new BitSet(new long[]{0x0000000000000200L});
+	public static final BitSet FOLLOW_OPEN_in_formula388 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_first_in_formula390 = new BitSet(new long[]{0x0000000000078000L});
+	public static final BitSet FOLLOW_op_bool_in_formula392 = new BitSet(new long[]{0x0000000000004F90L});
+	public static final BitSet FOLLOW_ctl_end_in_formula394 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_CLOSE_in_formula396 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_TEMPORAL_in_formula412 = new BitSet(new long[]{0x0000000000000200L});
+	public static final BitSet FOLLOW_OPEN_in_formula414 = new BitSet(new long[]{0x0000000000004F90L});
+	public static final BitSet FOLLOW_ctl_init_in_formula416 = new BitSet(new long[]{0x0000000000078040L});
+	public static final BitSet FOLLOW_op_bool_in_formula419 = new BitSet(new long[]{0x0000000000004F90L});
+	public static final BitSet FOLLOW_ctl_end_in_formula421 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_CLOSE_in_formula427 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ATOMIC_in_first458 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ATOMIC_in_second470 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_formula_in_ctl_init487 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_formula_in_ctl_end508 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_14_in_neg530 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_15_in_op_bool554 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_18_in_op_bool564 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_17_in_op_bool575 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_16_in_op_bool585 = new BitSet(new long[]{0x0000000000000002L});
 }
