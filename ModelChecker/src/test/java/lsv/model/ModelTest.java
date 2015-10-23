@@ -2,9 +2,10 @@ package lsv.model;
 
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Rule;
+import java.io.FileNotFoundException;
+
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.rules.ExternalResource;
 
 import lsv.utils.ModelGenerator;
 
@@ -13,22 +14,20 @@ public class ModelTest {
 
     private ModelGenerator model;
     
-    @Rule
-    public ExternalResource externalResource = new ExternalResource() {
-        @Override
-        protected void before() throws Throwable {
-            String modelFilePath = "model.json";
-             model = new ModelGenerator(modelFilePath);  
+        @Before
+        public void before() throws Throwable {
+           
         };
 
-        @Override
-        protected void after() {
-          
-        };
-    };
-    
     @Test 
     public void test() {
+        String modelFilePath = "C\:\Users\IBM_ADMIN\Documents\TASK\temporary\temporary\playground\ModelChecker\src\test\resources\model.json";
+        try {
+            model = new ModelGenerator(modelFilePath);
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }  
         assertTrue(true);
     }
 
