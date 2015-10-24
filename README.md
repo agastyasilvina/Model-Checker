@@ -12,8 +12,9 @@ September, 2015
 ===============
 The Model Checker project is a project to implement a simple model checker.
 This model checker consists of several components, 
-```
-	1) Model Generator 
+
+	1. Model Generator 
+	==================
 	   The model generator generates the model into an object of 2D graph. 
 	   The graph (i.e. represented as an adjacent list) is created for generating
 	   all possible pathways from an initial state. A model may have several
@@ -39,7 +40,8 @@ This model checker consists of several components,
 	  a CTL formula. It may have actions as well. If a model doesn't have constraint, 
 	  the constraint may be omitted. (e.g. modelNoConstraint.json)
 	  
-	2) CTL Parser
+	2. CTL Parser
+	=============
 	   A CTL parser is a class used to parse a CTL formula to a Formula object used in 
 	   this model checker. By using a model checker, a formula can be verified.
 	   The CTL Parser takes an input of a JSON file (e.g. ctl.json). The file 
@@ -50,12 +52,12 @@ This model checker consists of several components,
 	   a : [act, act1, act2]
 	   b : [act2, act3, act4]
 	   
-	3) Path Generator and Verifier
+	3. Path Generator and Verifier
+	==============================
 	   A path generator is used to generate all possible path for the input model. 
 	   Once generated, a formula can be tested against the pathways using a verifier.  
 
 	   Note: All the resources can be found in the src/test/resources
-```
 
 2. Installation
 ================
@@ -71,7 +73,17 @@ The Antlr library is needed during runtime (i.e. FormulaLexer.java & FormulaPars
 to parse the CTL formula based on the grammar in Formula.g. 
 
 If you are using eclipse or other java IDE, you can import the project to the IDE.
-	  
+
+To build the groject using gradle, the syntax is as follow:
+```
+	./gradlew clean build test coverage
+
+```
+clean is a gradle task to clean the build directory
+build is a gradle task to build the project (e.g compileJava)
+test is a gradle task to run the unit testing
+coverage is a gradle task to generate the test coverage report
+
 3. CTL Formula Parser
 ======================
 The CTL parser we use in this model is implemented using Antlr 3.X, 
@@ -79,6 +91,7 @@ There are two different parsers available to use for this project based on its g
 (i.e. Formula.g). Detail of how the CTL is being parse is as below:
 
 Example:
+
 ```
 	> ApFq ( a && b ); 
 	  p = ["act", "act2"];
