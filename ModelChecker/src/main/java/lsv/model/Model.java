@@ -1,9 +1,8 @@
 package lsv.model;
 
-
 /**
  * The Model class is the template class for the model.json.
- * The properties of the object is adjusted to the JSON file (e.g. /data/model.json)
+ * The properties of the object is adjusted to the JSON file (e.g. model.json)
  * The instance of Model is used to generate the graph used for implementing the
  * model checker. 
  * A model is consist of states and transitions

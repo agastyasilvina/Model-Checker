@@ -7,7 +7,7 @@ import java.util.Arrays;
  * a Transition has a source state and a target state.
  * Each transition may have a set of action to be performed. 
  * 
- * */
+ **/
 public class  Transition {
 	private int source;
 	private int target;

@@ -1,4 +1,3 @@
-// $ANTLR 3.5.2 C:\\Users\\IBM_ADMIN\\antlr\\antlr\\src\\Formula.g 2015-10-23 10:06:45
 package lsv.grammar;
 import org.antlr.runtime.*;
 import java.util.Stack;

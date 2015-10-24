@@ -15,7 +15,7 @@ import com.google.gson.JsonSyntaxException;
 /**
  * The CTL class is the template class for the JSON file 
  * of the CTL formula for the model. The properties
- * of the object is adjusted to the JSON file. (e.g. /data/ctl.json)
+ * of the object is adjusted to the JSON file. (e.g. ctl.json)
  * The instance of CTL is used by the parser to generate a Formula 
  * object
  * 

@@ -1,9 +1,8 @@
 package lsv.grammar;
 
 /**
- * FormulaAlt class.
- * This is an alternatives option for parsing the CTL formula. 
- * It's more compact that the Formula class.
+ * Formula class.
+ * Used to verify the model
  * Example: AG( a && b)
  *          EF( b || AG (c) )
  *          EF( AG(c) || (b)) 
@@ -203,8 +202,7 @@ public class Formula {
 		this.operator = op;
 		
 	}
-	
-	
+		
 	public Formula(Formula formula, String ap2, String op) {
 		initializeArrays();
 		putFormula(formula,0);
@@ -212,8 +210,7 @@ public class Formula {
 		this.operator = op;
 		
 	}
-	
-	
+		
 	public Formula(Formula formula, Formula formula2, String op) {
 		initializeArrays();
 		putFormula(formula,0);
@@ -221,8 +218,7 @@ public class Formula {
 		this.operator = op;
 		
 	}
-	
-	
+		
 	public Formula(String quantifier, String ap, String ap2, String op) {
 		this.quantifier = quantifier;
 		initializeArrays();
@@ -258,8 +254,6 @@ public class Formula {
 		
 	}
 
-	
-	
 	//true or false (TAUTOLOGY)
 	public Formula(boolean tautology) {
 		this.tautology = new String[2];
@@ -270,15 +264,12 @@ public class Formula {
 		}
 		this.singleTt = true;
 		
-		
-
 	}
 	
 	public static void addActions(CTL ctl, Formula formula) {
 		formula.actions = new String[2][];
 		if(formula.quantifier != null) {
-			if(formula.quantifier.length() > 2) {
-			
+			if(formula.quantifier.length() > 2) {			
 				//check the second...
 				if(ctl.getActionMap().get(formula.quantifier.charAt(1)) != null) {
 					formula.actions[0] = ctl.getActionMap().get(formula.quantifier.charAt(1));
@@ -320,7 +311,6 @@ public class Formula {
 		this.ap[index] = ap.charAt(ap.length()-1) + "";
 	}
 	
-
 	private void putFormula(Formula formula, int index) {
 		if(formula.singleAp) {
 			putAp(formula.ap[0], index);
@@ -350,7 +340,5 @@ public class Formula {
 		this.singleAp = formula.singleAp;
 		this.singleTt = formula.singleTt;
 	}
-	
-
-	
+		
 }

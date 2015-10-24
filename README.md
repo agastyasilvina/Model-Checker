@@ -1,4 +1,4 @@
-Readme for Model Checker 
+Readme for the Model Checker project
 University of St Andrews
 School of Computer Science
 
@@ -17,17 +17,17 @@ This model checker consists of several components,
 	   The model generator generates the model into an object of 2D graph. 
 	   The graph (i.e. represented as an adjacent list) is created for generating
 	   all possible pathways from an initial state. A model may have several
-	   initial states. The model generator takes a JSON file (e.g. /data/json) as an input. 
-	  "model.json"
+	   initial states. The model generator takes a JSON file (e.g. model.json) as an input. 
+	  
 	  The model.json is a JSON file that contains a model object. 
 	  The model object consist of states,  transitions. It may also have a constraint to 
 	  enforce fairness.
 	  
-	  a state consist of boolean "init" to determine whether the current state
+	  A state consist of boolean "init" to determine whether the current state
 	  is an initial state, integer "name", the "name" is used to give a unique id
 	  of a model. The name of the state need to be unique starting from 0
 	  (e.g. 0,1,2,3). The model generator assumes that the states obtained
-	  from the "model.json" file is unique (i.e. form a sequence from 0 to n states).
+	  from the "model.json" file is unique (i.e. it forms a sequence from 0 to n states).
 	  A state also has an array of "label". Label is an array that acts 
 	  as a placeholder for the atomic prepositions (APs) of the current state. 
 	  If a state has no atomic preposition the label may be omitted.
@@ -37,12 +37,12 @@ This model checker consists of several components,
 	  
 	  A constraint in the model is used to enforced fairness. Basically, a constraint is
 	  a CTL formula. It may have actions as well. If a model doesn't have constraint, 
-	  the constraint may be omitted. (e.g. /data/modelNoConstraint.json)
+	  the constraint may be omitted. (e.g. modelNoConstraint.json)
 	  
 	2) CTL Parser
-	   A CTL parser is a program used to parse a CTL formula to a Formula object used in 
-	   this model checker. Using a model checker, a formula for the model can be verified.
-	   The CTL Parser takes an input of a JSON file (e.g. /data/ctl.json). The file 
+	   A CTL parser is a class used to parse a CTL formula to a Formula object used in 
+	   this model checker. By using a model checker, a formula can be verified.
+	   The CTL Parser takes an input of a JSON file (e.g. ctl.json). The file 
 	   contains a formula and actions. The set of action for the action based -CTL 
 	   is represented as a Map with small-letter case as its key. 
 	   Example:
@@ -53,20 +53,23 @@ This model checker consists of several components,
 	3) Path Generator and Verifier
 	   A path generator is used to generate all possible path for the input model. 
 	   Once generated, a formula can be tested against the pathways using a verifier.  
+
+	   Note: All the resources can be found in the src/test/resources
 ```
 
 2. Installation
+
 ================
 Note that this Model Checker will not run without Java installed on the host
 system. Java can be download from http://java.sun.com.
 
-To run the program, all the libraries (e.g. gson, antlr) are needed. 
-The libraries need can be added manually to the project. By default, it's managed 
-by a build automation tool. (i.e. gradle)
+To run the program, all the libraries (e.g. gson, antlr, junit) are needed. 
+The libraries can be added manually to the project. By default, it's managed 
+by a build automation tool, gradle (i.e. gradle.org).
 
 There is no need to install antlr as the parser and lexer has been generated.
-The Antlr library is needed during runtime. (i.e. FormulaLexer.java & FormulaParser.java)
-for the CTL formula based on the Formula.g. 
+The Antlr library is needed during runtime (i.e. FormulaLexer.java & FormulaParser.java)
+to parse the CTL formula based on the grammar in Formula.g. 
 
 If you are using eclipse or other java IDE, you can import the project to the IDE.
 	  
@@ -78,10 +81,15 @@ There are two different parsers available to use for this project based on its g
 
 Example:
 ```
-	> ApFq ( a && b ); p = ["act", "act2"]; q = ["act3", "act4"]
+	> ApFq ( a && b ); 
+	  p = ["act", "act2"];
+	  q = ["act3", "act4"]
 		quantifier = "AF"
 		ap = {a,b}
 		operator = "&&"
+		actions[0] = ["act", "act2"]
+		actions[1] = ["act3", "act4"]
+		
 	> A ( a U AG (c) )
 		quantifier = "A"
 		ap = {a}

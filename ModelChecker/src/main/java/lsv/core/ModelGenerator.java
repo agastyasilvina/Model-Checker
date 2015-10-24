@@ -81,13 +81,10 @@ public class ModelGenerator {
 		
 		createGraph(model, isKripke, this);				
 		checkKripke(isKripke, this);	
-        //for the formula... 
-        addConstraint(filePath, this);
-        	
+        addConstraint(filePath, this);      	
 	}
 
 
-	//For the formula Alternatives...
 	private static void addConstraint(String filePath, ModelGenerator mg) throws FileNotFoundException {
 		JsonParser parser = new JsonParser();
         JsonElement jsonElement = parser.parse(new FileReader(filePath));
@@ -106,8 +103,6 @@ public class ModelGenerator {
         }
 	}
 
-	
-
 	private static void createGraph(Model model, boolean[] isKripke, ModelGenerator mg) {
 		for(int i = 0; i < model.getTransitions().length; i++) {
 			Transition curr = model.getTransitions()[i];
@@ -117,8 +112,7 @@ public class ModelGenerator {
 			} else {
 				mg.graph.put(curr.getSource(), new ArrayList<Transition>());
 				mg.graph.get(curr.getSource()).add(curr);
-			}
-			
+			}			
 		}
 	}
 
