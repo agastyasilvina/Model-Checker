@@ -58,7 +58,6 @@ This model checker consists of several components,
 ```
 
 2. Installation
-
 ================
 Note that this Model Checker will not run without Java installed on the host
 system. Java can be download from http://java.sun.com.
@@ -89,7 +88,7 @@ Example:
 		operator = "&&"
 		actions[0] = ["act", "act2"]
 		actions[1] = ["act3", "act4"]
-		
+
 	> A ( a U AG (c) )
 		quantifier = "A"
 		ap = {a}
