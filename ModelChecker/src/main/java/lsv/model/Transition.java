@@ -9,22 +9,22 @@ import java.util.Arrays;
  * 
  **/
 public class  Transition {
-	private int source;
-	private int target;
+	private String source;
+	private String target;
 	private String [] actions;
 	
 	/**
 	 * Returns the source state of a transition.
-	 * @return the id (integer) of the source state
+	 * @return the id of the source state
 	 * */
-	public int getSource() {
+	public String getSource() {
 		return source;
 	}
 	/**
 	 * Returns the target state of a transition.
-	 * @return the id (integer) of the target state
+	 * @return the id of the target state
 	 * */
-	public int getTarget() {
+	public String getTarget() {
 		return target;
 	}
 	/**

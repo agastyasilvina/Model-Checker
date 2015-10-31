@@ -18,6 +18,7 @@ import lsv.grammar.Formula;
 import lsv.model.Model;
 import lsv.model.State;
 import lsv.model.Transition;
+import lsv.util.Helper;
 
 /**
  * The ModelGenerator is a class for generating the model. It allows the user to 
@@ -30,7 +31,7 @@ import lsv.model.Transition;
  * */
 public class ModelGenerator {
 	
-	private Map<Integer, ArrayList<Transition>> graph;
+	private Map<String, ArrayList<Transition>> graph;
 
 	private Transition [] transitions;
 	private State [] states;
@@ -39,7 +40,7 @@ public class ModelGenerator {
 	
 	private boolean kripke;
 	
-	public Map<Integer, ArrayList<Transition>> getGraph() {
+	public Map<String, ArrayList<Transition>> getGraph() {
 		return this.graph;
 	}
 
@@ -76,11 +77,10 @@ public class ModelGenerator {
 		//Initialize
 		this.states = model.getStates();
 		this.transitions = model.getTransitions();
-		this.graph = new HashMap<Integer,  ArrayList<Transition>>();
-		boolean [] isKripke = new boolean[model.getStates().length];
+		this.graph = new HashMap<String,  ArrayList<Transition>>();
 		
-		createGraph(model, isKripke, this);				
-		checkKripke(isKripke, this);	
+		createGraph(model, this);				
+		checkKripke(this);	
         addConstraint(filePath, this);      	
 	}
 
@@ -103,10 +103,9 @@ public class ModelGenerator {
         }
 	}
 
-	private static void createGraph(Model model, boolean[] isKripke, ModelGenerator mg) {
+	private static void createGraph(Model model, ModelGenerator mg) {
 		for(int i = 0; i < model.getTransitions().length; i++) {
 			Transition curr = model.getTransitions()[i];
-			isKripke[curr.getSource()] = true;
 			if(mg.graph.containsKey(curr.getSource())) {
 				mg.graph.get(curr.getSource()).add(curr);
 			} else {
@@ -116,14 +115,17 @@ public class ModelGenerator {
 		}
 	}
 
-	private static void checkKripke(boolean[] isKripke, ModelGenerator mg) {
+	private static void checkKripke(ModelGenerator mg) {
 		mg.kripke = true;
-		for(int i = 0; i < isKripke.length; i++) {
-			if(!isKripke[i]) {
-				mg.kripke = false;
-				break;
-			}
+		String [] sourceTransition = new String[mg.transitions.length];
+		String [] states = new String[mg.states.length];
+		for(int i = 0; i < sourceTransition.length; i++) {
+			sourceTransition[i] = mg.transitions[i].getSource();
 		}
+		for(int i = 0; i < states.length; i++) {
+			states[i] = mg.states[i].getName();
+		}
+		mg.kripke = Helper.containAnd(sourceTransition, states);
 	}
 	
 }

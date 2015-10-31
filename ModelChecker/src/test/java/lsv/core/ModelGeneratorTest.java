@@ -33,15 +33,15 @@ public class ModelGeneratorTest {
     
     @Test 
     public void getGraph() {
-    	Map <Integer, ArrayList<Transition>> graph =  model.getGraph();
+    	Map<String, ArrayList<Transition>> graph =  model.getGraph();
     	assertEquals(graph.size(), 3);
-    	assertEquals(graph.get(0).get(0).getActions()[0], "act");   	
+    	assertEquals(graph.get("s0").get(0).getActions()[0], "act");   	
     }
     
     @Test
     public void getStates() {
     	State [] states = model.getStates();
-    	assertEquals(states[0].getName(),0);
+    	assertEquals(states[0].getName(),"s0");
     	assertTrue(states[0].isInit());
     	assertTrue(states[0].getLabel()[0].equalsIgnoreCase("a"));  	
     }
@@ -50,13 +50,14 @@ public class ModelGeneratorTest {
     public void getTransitions() {
     	Transition [] transitions = model.getTransitions();
     	assertEquals(transitions.length, 4);
-    	assertEquals(transitions[0].getSource(), 0);
-    	assertEquals(transitions[1].getTarget(), 2);
+    	assertEquals(transitions[0].getSource(), "s0");
+    	assertEquals(transitions[1].getTarget(), "s2");
     }
     
     @Test
     public void isKripke() {
     	assertTrue(model.isKripke());
+    	System.out.println();
     }
     
     @Test 

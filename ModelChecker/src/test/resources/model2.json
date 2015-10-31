@@ -2,49 +2,49 @@
 	"states": [
 		{
 			"init": true,
-			"name": 0,
+			"name": "s0",
 			"label": ["b"]
 		}, 
 		{
 			"init": false,
-			"name": 1, 
+			"name": "s1", 
 			"label": ["b"]
 		}, 
 		{
 			"init": false,
-			"name": 2,
+			"name": "s2",
 			"label": ["a","c"]
 		},
 		{
 			"init": false,
-			"name": 3,
+			"name": "s3",
 			"label": ["a", "b"]
 		}
 	],
 	"transitions": [
 		{
-			"source": 0,
-			"target": 1,
+			"source": "s0",
+			"target": "s1",
 			"actions": ["act1"]
 		}, 
 		{
-			"source": 1,
-			"target": 3,
+			"source": "s1",
+			"target": "s3",
 			"actions": ["act2"]
 		}, 
 		{
-			"source": 1,
-			"target": 2,
+			"source": "s1",
+			"target": "s2",
 			"actions":["act2"]
 		},
 		{
-			"source": 2,
-			"target": 2,
+			"source": "s2",
+			"target": "s2",
 			"actions": ["act3"]
 		},
 		{
-			"source": 3,
-			"target": 3,
+			"source": "s3",
+			"target": "s3",
 			"actions": ["act1"]
 		}
 	],

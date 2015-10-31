@@ -2,45 +2,45 @@
 	"states": [
 		{
 			"init": true,
-			"name": 0,
+			"name": "s0",
 			"label": ["a"]
 		}, 
 		{
 			"init": false,
-			"name": 1, 
+			"name": "s1", 
 			"label": [ "a", "b"]
 		}, 
 		{
 			"init": true,
-			"name": 2,
+			"name": "s2",
 			"label": ["c"]
 		}
 	],
 	"transitions": [
 		{
-			"source": 0,
-			"target": 1,
+			"source": "s0",
+			"target": "s1",
 			"actions": ["act"]
 		}, 
 		{
-			"source": 0,
-			"target": 2,
+			"source": "s0",
+			"target": "s2",
 			"actions": ["act2"]
 		}, 
 		{
-			"source": 1,
-			"target": 2,
+			"source": "s1",
+			"target": "s2",
 			"actions": ["act2"]
 		},
 		{
-			"source": 2,
-			"target": 0,
+			"source": "s2",
+			"target": "s0",
 			"actions": ["act2"]
 		}
 
 	],
 	"constraint": {
-		"formula": "AaFb (a && b) ",
+		"formula": "AaFb (p && q) ",
 		"a": ["act", "act2"],
 		"b": ["act3", "act4"]
 	}

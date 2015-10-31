@@ -9,7 +9,7 @@ package lsv.model;
  * */
 public class State {
 	private boolean init;
-	private int name;
+	private String name;
 	private String [] label;
 	
 	/**
@@ -24,7 +24,7 @@ public class State {
 	 * Returns the name of the state
 	 * @return integer name 
 	 * */
-	public int getName() {
+	public String getName() {
 		return name;
 	}
 	
